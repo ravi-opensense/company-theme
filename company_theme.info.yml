@@ -1,0 +1,18 @@
+name: Company Theme
+type: theme
+core: '8.x'
+description: 'This is my Company theme'
+base theme: classy
+package: custom
+
+regions:
+  header: header
+  navigation: Main navigation
+  content: content
+  footer: footer
+  page_top: page_top
+  page_bottom: page_bottom
+
+libraries:
+  - 'company_theme/global-css'
+  - 'company_theme/global-js'
