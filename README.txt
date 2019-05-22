@@ -1,0 +1,1 @@
+This is simple theme of drupal 8.
