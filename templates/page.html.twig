@@ -1,14 +1,18 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    {{ page.navigation }}
-  </div>
-</nav>
-<div class="jumbotron text-center">
-  {{ page.header }}
-</div>
-<div class="content-wrapper">
-  {{ page.content }}
-</div>
-<div class="content-wrapper">
-  {{ page.footer }}
-</div>
+{% if page.navigation %}
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			{{ page.navigation }}
+		</div>
+	</nav>
+{% endif %}
+{% if page.header %}
+	{% include '@company_theme/include/header.html.twig' %}
+{% endif %}
+{% if page.content %}
+	<div class="content-wrapper">
+		{{ page.content }}
+	</div>
+{% endif %}
+{% if page.footer %}
+	{% include '@company_theme/include/footer.html.twig' %}
+{% endif %}
